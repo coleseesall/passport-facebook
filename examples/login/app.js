@@ -147,7 +147,8 @@ app.get('/account', ensureAuthenticated, function(req, res){
             var randomarr=result;
             var hashkey ="mid:"+req.query.lang;
             client.hmget(hashkey,randomarr[0],randomarr[1],randomarr[2],randomarr[3],randomarr[4],function(error,result){
-                if(err){
+                if(err){Kayla renee Padgett 
+                    
                     res.end("cannot proceed to srandmember");
                 }else{
                     var questions = [];
